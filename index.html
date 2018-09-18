@@ -4,115 +4,173 @@
 <head>
   <title>HTML wireframe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:400,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
 </head>
 
 <body>
+  <nav role="banner">
+    <div class="logo">
+      Svetlana Raeva
+      <!--<img class="photo" src="./images/myAvatar.png">-->
+    </div>
+    <div className="menu">
+      <ul>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="mailto:svetlana.myth@gmail.com" target="_blank">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
   <main role="main">
-    <header role="banner">
-      <div class="container">
-        <img src="./images/svelana_pic.png" class="photo" />
+    <div class="container">
+      <!-- About -->
+      <header role="banner" class="about">
+        <div class="hero">
+          <h1>Hi, my name is Svetlana.</h1>
+          <div class="hero-text">
+            <p>I am a full stack JavaScript developer living in Seattle, WA.</p>
 
-        <h1>Hi, I am Svetlana Raeva.</h1>
-        <p>I am available for exciting JavaScript opportunities in Seatte, WA.</p>
-        <p>I work with React, Express and Mongo stack.</p>
-        <p>I am passionate about creating web apps with great user experience.</p>
-        <div class="contact">
-          <p>Contact me using the following links:</p>
-          <ul>
-            <li>
-              <a href="mailto:svetlana.myth@gmail.com" target="_blank">
-                <i class="fas fa-envelope-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/svetlana-raeva-3720a862/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/carabus" target="_blank">
-                <i class="fab fa-github-square"></i>
-              </a>
-            </li>
-          </ul>
+            <p>I've been working in tech for the last 10 years (doing testing and coding in Java for Web projects). Currently,
+              I work with a JavaScript MERN stack of MongoDB, Express, React and Node.
+            </p>
+
+            <p>In my free time I enjoy archery, snowboarding and science fiction.</p>
+
+            <p>Check out my projects below and feel free to get in touch.</p>
+          </div>
+
+
+          <div class="links">
+            <ul>
+              <li>
+                <a href="mailto:svetlana.myth@gmail.com" target="_blank">
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/svetlana-raeva-3720a862/" target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/carabus" target="_blank">
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </header>
+
+      <div class="hero">
+        <h2 id="projects">Projects</h2>
       </div>
-    </header>
+      <section class="projects">
 
+        <div class="row">
+          <div class="column-60">
+            <img src="./images/arrow-tracker-min.png" />
+          </div>
+          <div class="column-40">
+            <h3>Arrow Tracker</h3>
+            <div class="hero-text">
+              <p class="bold-text">Mongo, Express, React, Node</p>
+              <p>A mobile friendly web app for archery enthusiasts to keep track of their progress.</p>
+            </div>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="https://arrow-tracker.herokuapp.com/" target="_blank">Live Demo</a>
+                </li>
+                <li>
+                  <a href="https://github.com/carabus/archery-tracker-client" target="_blank">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <h2>My Projects</h2>
-    <section>
-      <div class="container">
-        <div class="screenshot">
-          <img src="./images/arrow-tracker.png" />
         </div>
-        <div class="project-info">
-          <h3>Arrow Tracker</h3>
-          <h4>(React, Node, Mongo, Express)</h4>
-          <p>A mobile friendly web app for archery enthusiasts to keep track of their progress.</p>
-          <p class="buttons">
-            <a href="https://arrow-tracker.herokuapp.com/" target="_blank">View Demo</a>
-            <a href="https://github.com/carabus/archery-tracker-client" target="_blank">View GitHub</a>
-          </p>
-        </div>
-      </div>
-    </section>
+        <hr/>
+        <div class="row">
+          <div class="column-60">
+            <img src="./images/battleship-min.png" />
+          </div>
+          <div class="column-40">
+            <h3>Battleship Online</h3>
+            <div class="hero-text">
+              <p class="bold-text">Mongo, Express, Node, Socket.io</p>
+              <p>A lightweight and casual game of battleship for 2 players.</p>
+            </div>
 
-    <section>
-      <div class="container">
-        <div class="screenshot">
-          <img src="./images/battleship.png" />
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="https://carabus-battleship.herokuapp.com/" target="_blank">Live Demo</a>
+                </li>
+                <li>
+                  <a href="https://github.com/carabus/battleship-online" target="_blank">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="project-info">
-          <h3>Battleship Online</h3>
-          <h4>Node, Mongo, Express</h4>
-          <p>A lightweight and casual game of battleship for 2 players.</p>
-          <p class="buttons">
-            <a href="https://carabus-battleship.herokuapp.com/" target="_blank">View Demo</a>
-            <a href="https://github.com/carabus/battleship-online" target="_blank">View GitHub</a>
-          </p>
+        <hr/>
+        <div class="row">
+          <div class="column-60">
+            <img src="./images/road-trip-min.png" />
+          </div>
+          <div class="column-40">
+            <h3>Road Trip Weather Forecast</h3>
+            <div class="hero-text">
+              <p class="bold-text">Vanilla JS, Google Maps integration</p>
+              <p>An app that helps the user to get weather forecast for a journey with a complex route.</p>
+            </div>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="https://carabus.github.io/road-trip-weather-forecast/" target="_blank">Live Demo</a>
+                </li>
+                <li>
+                  <a href="https://github.com/carabus/road-trip-weather-forecast" target="_blank">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="screenshot">
-          <image src="https://raw.githubusercontent.com/carabus/road-trip-weather-forecast/master/screenshots/results.png" />
-        </div>
-        <div class="project-info">
-          <h3>Road Trip Weather Forecast</h3>
-          <h4>Vanilla JS, Google Maps integration</h4>
-          <p>This simple app helps the user to get weather forecast for a journey with a complex route.</p>
-          <p class="buttons">
-            <a href="https://carabus.github.io/road-trip-weather-forecast/" target="_blank">View Demo</a>
-            <a href="https://github.com/carabus/road-trip-weather-forecast" target="_blank">View GitHub</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
   </main>
+
   <footer role="content-info">
-    <ul>
-      <li>
-        <a href="mailto:svetlana.myth@gmail.com" target="_blank">
-          <i class="fas fa-envelope-square"></i> email</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/svetlana-raeva-3720a862/" target="_blank">
-          <i class="fab fa-linkedin"></i> linkedin</a>
-      </li>
-      <li>
-        <a href="https://github.com/carabus" target="_blank">
-          <i class="fab fa-github-square"></i> github</a>
-      </li>
-    </ul>
+    <div class="logo">
+      Get in touch
+      <!--<img class="photo" src="./images/myAvatar.png">-->
+    </div>
+    <div className="menu">
+      <ul>
+        <li>
+          <a href="mailto:svetlana.myth@gmail.com" target="_blank">
+            Email</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/svetlana-raeva-3720a862/" target="_blank">
+            LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/carabus" target="_blank">
+            GitHub</a>
+        </li>
+
+      </ul>
+    </div>
   </footer>
 </body>
 
