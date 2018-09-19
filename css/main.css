@@ -209,7 +209,7 @@ nav .logo {
   }
 
   .column-60 {
-    padding-top: 10px;
+    padding-top: 25px;
     order: 2;
   }
 
@@ -230,7 +230,13 @@ nav .logo {
 
   footer {
     display: block;
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 120px;
+  }
+
+  footer .logo {
+    margin-bottom: 10px;
   }
 
   nav .logo {
@@ -239,6 +245,15 @@ nav .logo {
 
   nav {
     justify-content: flex-end;
+  }
+
+  .row {
+    margin-top: 25px;
+  }
+
+  .hero-text {
+    padding-top: 25px;
+    padding-bottom: 30px;
   }
 }
 
